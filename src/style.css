@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #f7f5f2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ToDoForm {
+  margin: 20px auto;
+  width: 20vw;
+  height: 300px;
+  background-color: #212529;
+  border-radius: 10px;
+}
+
+.ToDoForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.FormToDoItem,
+.FormToDoData {
+  margin: 20px auto;
+  padding: 10px 0px;
+  width: 75%;
+}
+.FormToDoItem {
+  margin-bottom: 5px;
+}
+
+.FormToDoItem input,
+.FormToDoData input {
+  margin: auto 0px;
+  color: #212529;
+}
+
+.ToDoForm button {
+  width: 100px;
+  margin: 10px auto;
+  background-color: #e64980;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.FormToDoData input {
+  width: 100%;
+  color: #212529;
+}
+
+.todos {
+  margin: auto;
+  width: 95%;
+}
+
+.ToDos {
+  margin: 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.todo {
+  height: 20vh;
+  min-width: 10vw;
+  max-width: 50vw;
+  background-color: #212529;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Delete {
+  position: absolute;
+  padding: 5px 15px;
+  background-color: #e64980;
+  border-radius: 10%;
+  border-style: none;
+  right: -10px;
+  top: -12px;
+}
+
+.FormToDoMessages {
+  margin: auto;
+  color: #f8d7da;
+  text-align: center;
+}
+.todo .data {
+  font-size: 14px;
+}
+
+.todo h2 {
+  padding: 15px 10px;
+}
