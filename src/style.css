@@ -143,6 +143,9 @@ body {
   color: #f8d7da;
   text-align: center;
 }
+.FormToDoMessages h2 {
+  font-size: 10px;
+}
 .todo .data {
   font-size: 14px;
 }

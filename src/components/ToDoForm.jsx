@@ -30,12 +30,15 @@ const ToDoForm = ({ items, use }) => {
 
   const [message, setMessage] = useState('');
   const validateDate = (date) => {
+    console.log(date);
     const arr = date.split('-');
     const now = new Date();
+    console.log(now.getMonth() + 1);
+    console.log(now.getDate(), now.getFullYear());
     if (
-      now.getMonth() + 1 >= +arr[1] &&
-      now.getDate() > +arr[2] &&
-      now.getFullYear() >= +arr[0]
+      now.getMonth() + 1 >= arr[1] &&
+      now.getDate() + 1 > arr[2] &&
+      now.getFullYear() >= arr[0]
     ) {
       return true;
     } else {
